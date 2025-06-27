@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wakeboards - AquaRide</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 50, 0.6);
+      padding: 1.5rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo a {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00d4ff;
+      text-decoration: none;
+    }
+    .nav {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    .nav a:hover {
+      color: #00d4ff;
+    }
+    main {
+      padding: 4rem 2rem;
+      background-color: rgba(0, 0, 50, 0.6);
+      max-width: 1000px;
+      margin: 2rem auto;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00d4ff80;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+    }
+    .product p {
+      font-weight: bold;
+      color: #00d4ff;
+    }
+    .product .details {
+      font-size: 0.9rem;
+      padding: 0 1rem;
+      color: #ddd;
+    }
+    .product .buy-btn {
+      display: inline-block;
+      margin: 1rem auto 1.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #00d4ff;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .product .buy-btn:hover {
+      background-color: #00b8e6;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 50, 0.8);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="aquaride.html">🌊 AquaRide</a></div>
+    <nav class="nav">
+      <a href="wakeboards.html">Wakeboards</a>
+      <a href="parts.html">Parts</a>
+      <a href="team.html">Our Team</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Wakeboards</h1>
+    <div class="products">
+      <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-jtz2hs2tu4/images/stencil/1280x1280/products/17291/30669/Hyperlite-Murray-Pro-Wakeboard-Team-X-Package-2023__11087.1684529036.jpg" alt="Hyperlite Murray Pro">
+        <h3>Hyperlite Murray Pro</h3>
+        <p>205.00 BHD</p>
+        <div class="details">A pro-level board offering great control and pop for experienced riders.</div>
+        <a class="buy-btn" href="https://wakeboards.com/hyperlite-Murray-wakeboard-package-team-X" target="_blank">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-jtz2hs2tu4/images/stencil/1280x1280/products/17272/30577/Byerly-Code-Kids-Wakeboard-Remix-Package-2022__63896.1654021786.jpg" alt="Byerly Code Kids">
+        <h3>Byerly Code Kids</h3>
+        <p>190.00 BHD</p>
+        <div class="details">A kid-friendly design made to support new wakeboarders with control and comfort.</div>
+        <a class="buy-btn" href="https://wakeboards.com/byerly-code-kids-wakeboard-package-remix" target="_blank">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-jtz2hs2tu4/images/stencil/1280x1280/products/17285/30640/Ronix-One-Legacy-Anthem-Wakeboard-Package-2023__43734.1684518466.jpg" alt="Ronix One Legacy">
+        <h3>Ronix One Legacy</h3>
+        <p>240.00 BHD</p>
+        <div class="details">Premium bindings and board setup delivering maximum lift and maneuverability.</div>
+        <a class="buy-btn" href="https://wakeboards.com/ronix-one-legacy-wakeboard-package-w-anthem-boa-bindings/" target="_blank">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-jtz2hs2tu4/images/stencil/1280x1280/products/17270/30562/Byerly-Code-Wakeboard-Team-Package-2022__40186.1654020952.jpg" alt="Byerly Code Wakeboard">
+        <h3>Byerly Code Wakeboard</h3>
+        <p>220.00 BHD</p>
+        <div class="details">Advanced performance wakeboard engineered for speed, balance, and durability.</div>
+        <a class="buy-btn" href="https://wakeboards.com/byerly-code-wakeboard-package-team" target="_blank">Buy Now</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 AquaRide. All rights reserved.
+  </footer>
+</body>
+</html>
